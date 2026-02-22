@@ -106,7 +106,7 @@ public class AccountsServiceImpl implements IAccountsService {
     /**
      *
      * @param mobileNumber - Input mobileNumber
-     * @return boolean indicating account deletion sucessfull or not.
+     * @return boolean indicating account deletion successful or not.
      */
     @Override
     public boolean DeleteAccount(String mobileNumber) {
