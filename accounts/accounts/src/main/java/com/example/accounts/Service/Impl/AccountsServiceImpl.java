@@ -79,7 +79,7 @@ public class AccountsServiceImpl implements IAccountsService {
     /**
      *
      * @param customersDto - CustomersDto Object
-     * @return boolean indicating account updation sucessful or not.
+     * @return boolean indicating account update successful or not.
      */
     @Override
     public boolean updateAccount(CustomersDto customersDto) {
