@@ -45,7 +45,7 @@ public class AccountsServiceImpl implements IAccountsService {
     /**
      *
      * @param customer - Customer Object
-     * @return the new account details
+     * @return the new account detail
      */
     private Account createNewAccount(Customer customer) {
         Account newaccount = new Account();

@@ -34,7 +34,7 @@ public class CardsServiceImpl implements ICardsService {
 
     /**
      * @param mobileNumber - Mobile Number of the Customer
-     * @return the new card details
+     * @return the new card detail
      */
     private Cards createNewCard(String mobileNumber) {
         Cards newCard = new Cards();
