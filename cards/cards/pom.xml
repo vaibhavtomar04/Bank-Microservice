@@ -113,9 +113,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <image>
-                        <name>bank/${project.artifactId}</name>
-                    </image>
                     <mainClass>com.example.cards.CardsApplication</mainClass>
                     <excludes>
                         <exclude>
@@ -123,6 +120,16 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <to>
+                        <image>${project.artifactId}</image>
+                    </to>
                 </configuration>
             </plugin>
         </plugins>
