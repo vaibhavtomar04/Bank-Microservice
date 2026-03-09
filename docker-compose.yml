@@ -1,0 +1,19 @@
+services:
+  accounts:
+    image: "vaibhavtomar041/accounts-ms"
+    container_name: accounts-ms
+    ports:
+      - "8080:8080"
+    networks:
+      - bankMs
+
+  cards:
+    image: "vaibhavtomar041/cards-ms"
+    container_name: cards-ms
+    ports:
+      - "9000:9000"
+    networks:
+      - bankMs
+networks:
+  eazybank:
+    driver: "bridge"
